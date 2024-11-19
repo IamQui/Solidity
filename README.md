@@ -1,15 +1,66 @@
-# Solidity
+## Foundry
 
-# Learning Solidity
+**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
-Solidity Tutorials 2024
+Foundry consists of:
 
-[Learn Solidity in 2024 (playlist)](https://www.youtube.com/watch?v=ikEOn-2rmWE&list=PLBy3Qkuapv_7NhggBKmjQBFUixsy4VLyb&index=1)
+-   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
+-   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
+-   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
+-   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
 
-[Solidity Tutorial](https://www.youtube.com/watch?v=AYpftDFiIgk&t=3199s)
+## Documentation
 
-[Web3 Developer 2024 Roadmap](https://www.youtube.com/watch?v=jYEqoIeAoBg&t=4352s)
+https://book.getfoundry.sh/
 
-[Solidity & Blockchain Development](https://www.youtube.com/watch?v=vwBxc8qfei8)
+## Usage
 
-[Blockchain & Solidity Development 2024](https://www.youtube.com/watch?v=jcgfQEbptdo&t=2s)
+### Build
+
+```shell
+$ forge build
+```
+
+### Test
+
+```shell
+$ forge test
+```
+
+### Format
+
+```shell
+$ forge fmt
+```
+
+### Gas Snapshots
+
+```shell
+$ forge snapshot
+```
+
+### Anvil
+
+```shell
+$ anvil
+```
+
+### Deploy
+
+```shell
+$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+```
+
+### Cast
+
+```shell
+$ cast <subcommand>
+```
+
+### Help
+
+```shell
+$ forge --help
+$ anvil --help
+$ cast --help
+```
